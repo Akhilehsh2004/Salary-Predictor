@@ -1,0 +1,101 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling (Glassmorphism Effect) */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Heading */
+h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Paragraph */
+p {
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+/* Input Field */
+input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+/* Button */
+button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Result Styling */
+h3 {
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
